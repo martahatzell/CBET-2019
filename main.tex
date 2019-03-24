@@ -1,0 +1,98 @@
+% NSF proposal generation template style file.
+% based on latex stylefiles written by Stefan Llewellyn Smith and
+% Sarah Gille, with contributions from other collaborators.
+%
+\documentclass{nsfproposal}
+
+\usepackage[super,sort&compress]{natbib}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{hyperref}
+\usepackage{bibentry}
+\usepackage{textcomp}
+\usepackage{wrapfig}
+\usepackage{soul}
+\setuldepth{1}
+\usepackage[most]{tcolorbox}
+\usepackage[skip=5pt]{caption}
+\usepackage[absolute]{textpos}
+\usepackage{gensymb}
+\textblockorigin{2 in}{2 in}
+\usepackage{caption}
+\captionsetup[figure]{font=small,labelfont=small}
+
+\setlength{\TPHorizModule}{\textwidth}
+\setlength{\TPVertModule}{\textheight}
+\newcommand\highlight[1]{\ul{\textit{#1}}}
+
+\title{Role of nanominerals on photochemical derived atmospheric NH\textsubscript{3} and N\textsubscript{2}O}
+%%^^If we could get this to one line it would buy a little space on the first page.
+
+%Fundamental understanding of the photocatalytic interaction between environmentally-relevant oxide interfaces and the nitrogen cycle
+%Investigation of photocatalytic nitrogen fixation and redox chemistry at environmentally-relevant oxide interfaces
+%Fundamental investigation of environmentally-relevant oxide photocatalysts on the nitrogen cycle
+
+\makeatletter
+\newcommand{\LeftHeader}{}
+\newcommand{\MiddleHeader}{}
+\newcommand{\RightHeader}{Georgia Institute of Technology}
+\newcommand{\LeftFooter}{Project Summary}
+\newcommand{\PageLimit}{1}
+\newcommand{\toPageLimit}{ of \PageLimit}
+% Commands for defining headers. The tex file for each document should re-define Document and PageLimit.
+
+\DeclareTextFontCommand{\emph}{\bfseries\em}
+%Make emph bold+italic
+
+%Convenience "to do" commands
+\newcommand{\todomarta}[1]{\todo[color=green]{Hatzell: #1}}
+\newcommand{\todoaj}[1]{\todo[color=blue]{Medford: #1}}
+
+\newcommand{\TIO}{TiO$_2$}
+\newcommand{\NN}{N$_2$}
+\newcommand{\NH}{NH\textsubscript{3}}
+\newcommand{\NO}{N\textsubscript{2}O}
+\newcommand{\mathplus}{+} %annoying bibtex thing
+%convenience functions
+
+\def\baselinestretch{1}
+
+\begin{document}
+
+%\include{0-cover_sheet}
+%\setcounter{page}{1}
+
+%\listoftodos
+%\newpage
+%\setcounter{page}{1}
+
+% Use includes for each document to make writing easier. Starting names with a number allows keeping them organized in the project folder
+\include{1-summary}
+\setcounter{page}{1}
+\include{2-description}
+\setcounter{page}{1}
+\include{references}
+\setcounter{page}{1}
+\include{3-data_management}
+\setcounter{page}{1}
+\include{4a-biosketch_AJM}
+\setcounter{page}{1}
+\include{4b-biosketch_MCH}
+\setcounter{page}{1}
+\include{4c-biosketch_CS}
+\setcounter{page}{1}
+\include{5-budget_justification}
+\setcounter{page}{1}
+\include{6-facilities_equipment}
+\setcounter{page}{1}
+\include{7-current_pending}
+\setcounter{page}{1}
+\include{8a-collaborators_affiliations_AJM}
+\setcounter{page}{1}
+\include{8b-collaborators_affiliations_MCH}
+\setcounter{page}{1}
+\include{8c-collaborators_affiliations_YT}
+\setcounter{page}{1}
+
+\end{document}
